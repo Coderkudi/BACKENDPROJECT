@@ -1,6 +1,6 @@
 import mongoose, { model, Schema } from "mongoose";
 
-const subscripttionSchema = new Schema({
+const subscriptionSchema = new Schema({
     subscriber: {
         type: Schema.Types.ObjectId,  // one who is subscribing 
         ref: "User"
@@ -18,4 +18,4 @@ const subscripttionSchema = new Schema({
 
 
 
-export const Subscription = mongoose.model("Subscription", subscripttionSchema)
+export const Subscription = mongoose.model("Subscription", subscriptionSchema)
